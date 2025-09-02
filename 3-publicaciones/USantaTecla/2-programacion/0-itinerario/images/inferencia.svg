@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="294px" preserveAspectRatio="none" style="width:229px;height:294px;background:#222222;" version="1.1" viewBox="0 0 229 294" width="229px" zoomAndPan="magnify"><defs/><g><!--class Variable--><rect fill="#222222" height="51.2813" id="Variable" style="stroke: #A80036; stroke-width: 3.0;" width="104" x="66" y="8"/><text fill="#FFFFFF" font-family="courier" font-size="20" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="96" x="70" y="32.5645">Variable</text><line style="stroke: #A80036; stroke-width: 3.0;" x1="67" x2="169" y1="43.2813" y2="43.2813"/><line style="stroke: #A80036; stroke-width: 3.0;" x1="67" x2="169" y1="51.2813" y2="51.2813"/><!--class Valor--><rect fill="#222222" height="51.2813" id="Valor" style="stroke: #A80036; stroke-width: 3.0;" width="68" x="6" y="120"/><text fill="#FFFFFF" font-family="courier" font-size="20" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="60" x="10" y="144.5645">Valor</text><line style="stroke: #A80036; stroke-width: 3.0;" x1="7" x2="73" y1="155.2813" y2="155.2813"/><line style="stroke: #A80036; stroke-width: 3.0;" x1="7" x2="73" y1="163.2813" y2="163.2813"/><!--class Tipo--><rect fill="#222222" height="51.2813" id="Tipo" style="stroke: #A80036; stroke-width: 3.0;" width="56" x="64" y="232"/><text fill="#FFFFFF" font-family="courier" font-size="20" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="48" x="68" y="256.5645">Tipo</text><line style="stroke: #A80036; stroke-width: 3.0;" x1="65" x2="119" y1="267.2813" y2="267.2813"/><line style="stroke: #A80036; stroke-width: 3.0;" x1="65" x2="119" y1="275.2813" y2="275.2813"/><!--link Variable to Valor--><path d="M100.1052,59.1951 C88.4126,75.9845 73.098,97.9746 60.8541,115.5556 " fill="none" id="Variable-Valor" style="stroke: #A9A9A9; stroke-width: 2.0;"/><polygon fill="#A9A9A9" points="57.8115,119.9245,66.2375,114.8252,60.6691,115.8215,59.6727,110.2531,57.8115,119.9245" style="stroke: #A9A9A9; stroke-width: 2.0;"/><text fill="#A9A9A9" font-family="courier" font-size="20" lengthAdjust="spacingAndGlyphs" textLength="12" x="47.1765" y="106.1599">1</text><!--link Valor to Tipo--><path d="M51.9299,171.1951 C59.6589,187.8422 69.7618,209.6023 77.8893,227.1077 " fill="none" id="Valor-Tipo" style="stroke: #A9A9A9; stroke-width: 2.0;"/><polygon fill="#A9A9A9" points="80.1257,231.9245,79.9637,222.077,78.0201,227.3895,72.7076,225.4459,80.1257,231.9245" style="stroke: #A9A9A9; stroke-width: 2.0;"/><text fill="#A9A9A9" font-family="courier" font-size="20" lengthAdjust="spacingAndGlyphs" textLength="12" x="62.9969" y="218.1599">1</text><!--link Variable to Tipo--><path d="M115.0175,59.1956 C110.2011,100.6904 100.73,182.2874 95.5651,226.7849 " fill="none" id="Variable-Tipo" style="stroke: #A9A9A9; stroke-width: 2.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A9A9A9" points="94.9877,231.76,99.9988,223.2813,95.5643,226.7934,92.0522,222.3588,94.9877,231.76" style="stroke: #A9A9A9; stroke-width: 2.0;"/><text fill="#A9A9A9" font-family="courier" font-size="20" lengthAdjust="spacingAndGlyphs" textLength="108" x="109" y="152.5645">implicito</text><text fill="#A9A9A9" font-family="courier" font-size="20" lengthAdjust="spacingAndGlyphs" textLength="12" x="81.1602" y="218.4375">1</text><!--
+@startuml
+skinparam backgroundColor #222222
+skinparam shadowing false
+skinparam padding 1
+hide circle
+hide stereotype
+skinparam arrow {
+    Thickness 2
+    Color #DarkGrey
+    FontSize 20
+    FontName courier
+    FontStyle normal
+    FontColor #DarkGrey
+}
+skinparam class {
+    BorderThickness 3
+    BorderColor<<a>> #1E90FF
+    BorderColor<<b>> #DC143C
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor #FFFFFF
+}
+skinparam classAttribute {
+    FontSize 15
+    FontName courier
+    FontStyle normal
+    FontColor<<a>> #1E90FF
+    FontColor<<b>> #DC143C
+}
+class Variable
+class Valor
+class Tipo
+
+Variable - -> "1" Valor
+Valor - -> "1" Tipo
+Variable ..> "1" Tipo : implicito
+@enduml
+
+PlantUML version 1.2019.05(Sat Apr 20 16:45:36 GMT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_222-b10
+Operating System: Linux
+OS Version: 5.15.146.1-microsoft-standard-WSL2
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

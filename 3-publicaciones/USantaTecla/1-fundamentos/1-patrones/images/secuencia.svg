@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="210px" preserveAspectRatio="none" style="width:308px;height:210px;background:#000000;" version="1.1" viewBox="0 0 308 210" width="308px" zoomAndPan="magnify"><defs/><g><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="261" x="5" y="17.9951">Dot Executable: /opt/local/bin/dot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="5" y="34.292">File does not exist</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="291" x="5" y="50.5889">Cannot find Graphviz. You should try</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="66.8857"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="79" x="5" y="83.1826">@startuml</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="5" y="99.4795">testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="72" x="5" y="115.7764">@enduml</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="132.0732"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17" x="10" y="148.3701">or</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="164.667"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="227" x="5" y="180.9639">java -jar plantuml.jar -testdot</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="197.2607"/><!--
+@startuml
+skinparam backgroundColor #222222
+skinparam handwritten true
+hide stereotype
+skinparam shadowing false
+skinparam padding 1
+
+skinparam arrow {
+    Thickness 2
+    Color #DarkGrey
+    FontSize 20
+    FontName courier
+    FontStyle normal
+    FontColor #DarkGrey
+}
+
+skinparam object {
+    BorderThickness 3
+    BorderColor<<A>> #DodgerBlue
+    BorderColor<<B>> #ForestGreen
+    BorderColor<<C>> #Crimson
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor<<A>> #DodgerBlue
+    FontColor<<B>> #ForestGreen
+    FontColor<<C>> #Crimson
+}
+
+skinparam package {
+    BorderThickness 3
+    BorderColor<<A>> #DodgerBlue
+    BorderColor<<B>> #ForestGreen
+    BorderColor<<C>> #Crimson
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor<<A>> #DodgerBlue
+    FontColor<<B>> #ForestGreen
+    FontColor<<C>> #Crimson
+}
+
+package Secuencia <<A>> {
+object "A" as a <<A>>
+object "B" as b <<A>>
+object "C" as c <<A>>
+object "D" as d <<A>>
+object "E" as e <<A>>
+}
+a -down-> b
+b -down-> c
+c -down-> d
+d -down-> e
+
+package Arbol <<B>> {
+object "A" as f <<B>>
+object "B" as g <<B>>
+object "C" as h <<B>>
+object "D" as i <<B>>
+object "E" as j <<B>>
+}
+f -down-> g
+f -down-> h
+g -down-> i
+g -down-> j
+
+package Grafo <<C>> {
+object A <<C>>
+object B <<C>>
+object C <<C>>
+object D <<C>>
+object E <<C>>
+}
+A - -> D
+A - -> E
+E - -> D
+B - -> E
+C - -> B
+D - -> C
+B - -> A
+@enduml
+
+PlantUML version 1.2019.05(Sat Apr 20 16:45:36 GMT 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_222-b10
+Operating System: Linux
+OS Version: 5.15.146.1-microsoft-standard-WSL2
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
