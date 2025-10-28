@@ -2,9 +2,13 @@
 <html lang="en"><head>
     <script src="https://cdn.jsdelivr.net/npm/p5@2.0.5/lib/p5.js"></script>
         <script>
-      document.addEventListener("click", () => {
-        document.querySelector("body").requestFullscreen();
-      });
+document.addEventListener("click", () => {
+  if (!document.fullscreenElement) {
+    document.body.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+});
             </script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
@@ -16,4 +20,5 @@
 
 
 </body></html>
+
 
